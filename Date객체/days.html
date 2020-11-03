@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요일판단</title>
+</head>
+
+<body>
+    <h1>요일 판단</h1>
+    <script>
+         //요일 판단
+        let d = new Date();
+        let year = d.getFullYear(),
+            month = d.getMonth(),
+            date = d.getDate(),
+            day = d.getDay();
+            
+        switch(day){
+            case 0:
+                let dd = "일";
+                break;
+            case 1:
+                let dd = "월";
+                break;
+            case 2:
+                let dd = "화";
+                break;
+            case 3:
+                let dd = "수";
+                break;
+            case 4:
+                let dd = "목";
+                break;
+            case 5:
+                let dd = "금";
+                break;
+            case 6:
+                let dd = "토";
+                break;
+            default: break;
+        }
+
+        document.write(year + "년 ");
+        document.write((month + 1) + "월 ");
+        document.write(date + "일 ");
+        document.write(dd + "요일<br>");
+    </script>
+</body>
+</html>
