@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현재 시각</title>
+</head>
+<body>
+    <script>
+
+        //24시간제
+        let d = new Date(),
+            h = d.getHours(),
+            m = d.getMinutes(),
+            s = d.getSeconds(),
+            time = h + "시" + m + "분" + s + "초"; 
+
+        document.write(time + "<br>");
+
+        //24시간제 -> 12시간제 변경
+        let h12 = (h > 12) ? (h-12) : h;
+
+        //12시간제 오전 오후 판정
+        let ampm = (h > 12) ? "오전" :"오후";
+
+        //분 2자릿수 표시
+        let min_o = (m<10) ? "0": "";
+
+        //초 2자릿수 표시
+        var sec_o = (s<10) ? "0": "";
+
+        let time2 = ampm + " " + h12 + ":" + min_o + m + ":" + sec_o + s;
+
+        
+        document.write(time2);
+
+       
+    </script>
+</body>
+</html>
