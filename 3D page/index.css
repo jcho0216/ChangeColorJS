@@ -1,0 +1,15 @@
+.box {
+    transform-style: preserve-3d;
+    width: 200px;
+    height: 200px;
+    background: #f90;
+    transform: rotateX(-30deg);
+}
+
+.box h1 {
+    width: 200px;
+    text-align: center;
+    transform: rotateY(45deg);
+    background: yellow;
+    transition-duration: 1s;
+}
