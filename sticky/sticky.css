@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.white {
+    margin: 200px 10px 100px 10px;
+    height: 2000px;
+    
+}
+.grey {
+    background: grey;
+    height: 2000px;
+    margin-top: 600px;
+    margin-bottom: 1600px;
+}
+
+.left-text {
+    float: left;
+    color: black;
+    padding: 10px;
+}
+
+.sticky {
+    position: sticky;
+    top: 200px;
+    float: right;
+}
+
+.img-together {
+    height: 2000px;
+    margin: 100px;
+    position: relative;
+
+}
+
+.smaller {
+    transform: scale(0.5);
+}
+
+.sticky2 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    position: sticky;
+    top: 100px;
+    transition: 0.1s;
+    
+}
